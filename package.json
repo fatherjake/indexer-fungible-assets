@@ -1,0 +1,17 @@
+{
+  "name": "fungible-assets-indexer",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "codegen": "envio codegen",
+    "dev": "envio dev",
+    "start": "envio start",
+    "deploy": "envio deploy"
+  },
+  "dependencies": {
+    "envio": "^2.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

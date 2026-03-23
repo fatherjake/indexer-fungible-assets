@@ -1,0 +1,22 @@
+type Transfer {
+  id: ID!
+  from: String! @index
+  to: String! @index
+  value: BigInt!
+  tokenAddress: String! @index
+  tokenSymbol: String!
+  blockNumber: Int!
+  blockTimestamp: Int!
+  transactionHash: String!
+  chainId: Int!
+}
+
+type Account {
+  id: ID!
+  address: String! @index
+  tokenAddress: String! @index
+  tokenSymbol: String!
+  totalSent: BigInt!
+  totalReceived: BigInt!
+  transferCount: Int!
+}

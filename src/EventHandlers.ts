@@ -1,0 +1,258 @@
+// Token address to symbol mapping (lowercase address -> symbol)
+const ADDRESS_TO_SYMBOL: Record<string, string> = {
+  // Tier 1 — Stablecoins
+  "0xdac17f958d2ee523a2206206994597c13d831ec7": "USDT",
+  "0xfde4c96c8593536e31f229ea8f37b2ada2699bb2": "USDT",
+  "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9": "USDT",
+  "0xf55bec9cafdbe8730f096aa55dad6d22d44099df": "USDT",
+  "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48": "USDC",
+  "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913": "USDC",
+  "0xaf88d065e77c8cc2239327c5edb3a432268e5831": "USDC",
+  "0x06efdbff2a14a7c8e15944d1f4a48f9f95f663a4": "USDC",
+  "0xdc035d45d973e3ec169d2276ddab16f1e407384f": "USDS",
+  "0x820c137fa70c8691f0e44dc420a5e53c168921dc": "USDS",
+  "0x6491c05a82219b8d1479057361ff1654749b876b": "USDS",
+  "0x4c9edd5852cd905f086c759e8383e09bff1e68b3": "USDe",
+  "0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34": "USDe",
+  "0x6b175474e89094c44da98b954eedeac495271d0f": "DAI",
+  "0x50c5725949a6f0c72e6c4a641f24049a917db0cb": "DAI",
+  "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1": "DAI",
+  "0xca77eb3fefe3725dc33bccb54edefc3d9f764f97": "DAI",
+  "0x6c3ea9036406852006290770bedfcaba0e23a0e8": "PYUSD",
+  "0x46850ad61c2b7d64d08c9c754f45254596696984": "PYUSD",
+  "0x8d0d000ee44948fc98c9b98a4fa4921476f08b0d": "USD1",
+  "0x8292bb45bf1ee4d140127049757c2e0ff06317ed": "RLUSD",
+  "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f": "GHO",
+  "0x7dff72693f6a4149b17e7c6314655f6a9f7c8b33": "GHO",
+  "0xc5f0f7b66764f6ec8c8dff7ba683102295e16409": "FDUSD",
+  "0x93c9932e4afa59201f0b5e63f7d816516f1669fe": "FDUSD",
+  "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd": "sUSDS",
+  "0x5875eee11cf8398102fdad704c9e96607675467a": "sUSDS",
+  "0xddb46999f8891663a8f2828d25298f70416d7610": "sUSDS",
+  "0x9d39a5de30e57443bff2a8307a4256c8797a3497": "sUSDe",
+  "0x211cc4dd073734da055fbf44a2b4667d5e5fe5d2": "sUSDe",
+  "0x96f6ef951840721adbf46ac996b59e0235cb985c": "USDY",
+  "0x35e050d3c0ec2d29d269a8ecea763a183bdf9a9d": "USDY",
+  "0x7712c34205737192402172409a8f7ccef8aa2aec": "BUIDL",
+  "0x1b19c19393e2d034d8ff31ff34c81252fcbbee92": "OUSG",
+  // Tier 2 — S-Tier Assets
+  "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": "WETH",
+  "0x4200000000000000000000000000000000000006": "WETH",
+  "0x82af49447d8a07e3bd95bd0d56f35241523fbab1": "WETH",
+  "0x5300000000000000000000000000000000000004": "WETH",
+  "0x514910771af9ca656af840dff83e8264ecf986ca": "LINK",
+  "0xf97f4df75117a78c1a5a0dbb814af92458539fb4": "LINK",
+  "0x548c6944cba02b9d1c0570102c89de64d258d3ac": "LINK",
+  "0x3c3a81e81dc49a522a592e7622a7e711c06bf354": "MNT",
+  "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984": "UNI",
+  "0xfa7f8980b0f1e64a2062791cc3b0871572f1f7f0": "UNI",
+  "0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9": "AAVE",
+  "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0": "wstETH",
+  "0xc1cba3fcea344f92d9239c08c0568f6f2f0ee452": "wstETH",
+  "0x5979d7b546e38e414f7e9822514be443a4800529": "wstETH",
+  "0xf610a9dfb7c89644979b4a0f27063e9e7d7cda32": "wstETH",
+  "0xa2e3356610840701bdf5611a53974510ae27e2e1": "wBETH",
+  "0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee": "weETH",
+  "0x04c0599ae5a44757c0af6f9ec3b93da8976c150a": "weETH",
+  "0x35751007a407ca6feffe80b3cb397736d2cf4dbe": "weETH",
+  "0x01f0a31698c4d065659b9bdc21b3610292a1c506": "weETH",
+  "0xbe9895146f7af43049ca1c1ae358b0541ea49704": "cbETH",
+  "0x2ae3f1ec7f1f5012cfeab0185bfc7aa3cf0dec22": "cbETH",
+  "0xae78736cd615f374d3085123a210448e74fc6393": "rETH",
+  "0xb6fe221fe9eef5aba221c348ba20a1bf5e73624c": "rETH",
+  "0xec70dcb4a1efa46b8f2d97c310c9c4790ba5ffa8": "rETH",
+  "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599": "WBTC",
+  "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f": "WBTC",
+  "0x3c1bca5a656e69edcd0d4e36bebb3fcdaca60cf1": "WBTC",
+  "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf": "cbBTC",
+  "0x18084fba666a33d37592fa2633fd49a74dd93a88": "tBTC",
+  "0x6c84a8f1c29108f47a79964b5fe888d4f4d0de40": "tBTC",
+  "0x8236a87084f8b84306f72007f36f2618a5634494": "LBTC",
+  "0xecac9c5f704e954931349da37f60e39f515c11c1": "LBTC",
+  "0x45804880de22913dafe09f4980848ece6ecbaf78": "PAXG",
+  "0x68749665ff8d2d112fa859aa293f07a622782f38": "XAUt",
+  // Tier 3 — Volatile Assets
+  "0xb50721bcf8d664c30412cfbc6cf7a15145234ad1": "ARB",
+  "0x912ce59144191c1204e64559fe8253a0e49e6548": "ARB",
+  "0x455e53cbb86018ac2b8092fdcd39d8444affc3f6": "POL",
+  "0xa0b73e1ff0b80914ab6fe0444e65848c4c34450b": "CRO",
+  "0x56072c95faa701256059aa122697b133aded9279": "SKY",
+  "0x58d97b57bb95320f9a05dc918aef65434969c2b2": "MORPHO",
+  "0xbaa5cc21fd487b8fcc2f632f3f4e8d37262a0842": "MORPHO",
+  "0x40bd670a58238e6e230c430bbb5ce6ec0d40df48": "MORPHO",
+  "0x57e114b691db790c35207b2e685d4a43181e6061": "ENA",
+  "0xfaba6f8e4a5e8ab82f62fe7c39859fa577269be3": "ONDO",
+  "0xd533a949740bb3306d119cc777fa900ba034cd52": "CRV",
+  "0x11cdb42b0eb46d95f990bedd4695a6e3fa034978": "CRV",
+  "0x6985884c4392d348587b19cb9eaaf157f13271cd": "ZRO",
+  "0xb62132e35a6c13ee1ee0f84dc5d40bad8d815206": "NEXO",
+  "0x163f8c2467924be0ae7b5347228cabf260318753": "WLD",
+  "0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce": "SHIB",
+  "0x6982508145454ce325ddbe47a25d4ec3d2311933": "PEPE",
+  "0x25d887ce7a35172c62febfd67a1856f20faebb00": "PEPE",
+  "0x1151cb3d861920e07a38e03eead12c32178567f6": "BONK",
+  "0x09199d9a5f4448d0848e4395d065e1ad9c4a1f74": "BONK",
+};
+
+function getTokenSymbol(srcAddress: string): string {
+  return ADDRESS_TO_SYMBOL[srcAddress.toLowerCase()] || "UNKNOWN";
+}
+
+async function handleTransfer({ event, context }: any) {
+  const tokenAddress = event.srcAddress;
+  const tokenSymbol = getTokenSymbol(tokenAddress);
+  const chainId = event.chainId;
+
+  const id = `${chainId}-${event.transaction.hash}-${event.logIndex}`;
+  context.Transfer.set({
+    id,
+    from: event.params.from,
+    to: event.params.to,
+    value: event.params.value,
+    tokenAddress,
+    tokenSymbol,
+    blockNumber: event.block.number,
+    blockTimestamp: event.block.timestamp,
+    transactionHash: event.transaction.hash,
+    chainId,
+  });
+
+  // Update sender account
+  const senderId = `${chainId}-${event.params.from}-${tokenAddress}`;
+  const sender = await context.Account.get(senderId);
+  context.Account.set({
+    id: senderId,
+    address: event.params.from,
+    tokenAddress,
+    tokenSymbol,
+    totalSent: (sender?.totalSent || 0n) + event.params.value,
+    totalReceived: sender?.totalReceived || 0n,
+    transferCount: (sender?.transferCount || 0) + 1,
+  });
+
+  // Update receiver account
+  const receiverId = `${chainId}-${event.params.to}-${tokenAddress}`;
+  const receiver = await context.Account.get(receiverId);
+  context.Account.set({
+    id: receiverId,
+    address: event.params.to,
+    tokenAddress,
+    tokenSymbol,
+    totalSent: receiver?.totalSent || 0n,
+    totalReceived: (receiver?.totalReceived || 0n) + event.params.value,
+    transferCount: (receiver?.transferCount || 0) + 1,
+  });
+}
+
+// Register handlers for all token contracts
+// Names must match Envio's generated exports (first letter capitalized)
+import * as generated from "../generated";
+
+const contractNames = [
+  // Ethereum
+  "USDT_Ethereum",
+  "USDC_Ethereum",
+  "USDS_Ethereum",
+  "USDe_Ethereum",
+  "DAI_Ethereum",
+  "PYUSD_Ethereum",
+  "USD1_Ethereum",
+  "RLUSD_Ethereum",
+  "GHO_Ethereum",
+  "FDUSD_Ethereum",
+  "SUSDS_Ethereum",
+  "SUSDe_Ethereum",
+  "USDY_Ethereum",
+  "BUIDL_Ethereum",
+  "OUSG_Ethereum",
+  "WETH_Ethereum",
+  "LINK_Ethereum",
+  "MNT_Ethereum",
+  "UNI_Ethereum",
+  "AAVE_Ethereum",
+  "WstETH_Ethereum",
+  "WBETH_Ethereum",
+  "WeETH_Ethereum",
+  "CbETH_Ethereum",
+  "RETH_Ethereum",
+  "WBTC_Ethereum",
+  "CbBTC_Ethereum",
+  "TBTC_Ethereum",
+  "LBTC_Ethereum",
+  "PAXG_Ethereum",
+  "XAUt_Ethereum",
+  "ARB_Ethereum",
+  "POL_Ethereum",
+  "CRO_Ethereum",
+  "SKY_Ethereum",
+  "MORPHO_Ethereum",
+  "ENA_Ethereum",
+  "ONDO_Ethereum",
+  "CRV_Ethereum",
+  "ZRO_Ethereum",
+  "NEXO_Ethereum",
+  "WLD_Ethereum",
+  "SHIB_Ethereum",
+  "PEPE_Ethereum",
+  "BONK_Ethereum",
+  // Base
+  "USDT_Base",
+  "USDC_Base",
+  "USDS_Base",
+  "USDe_Base",
+  "DAI_Base",
+  "SUSDS_Base",
+  "SUSDe_Base",
+  "WETH_Base",
+  "WstETH_Base",
+  "WeETH_Base",
+  "CbETH_Base",
+  "RETH_Base",
+  "CbBTC_Base",
+  "LBTC_Base",
+  "MORPHO_Base",
+  // Arbitrum
+  "USDT_Arbitrum",
+  "USDC_Arbitrum",
+  "USDS_Arbitrum",
+  "USDe_Arbitrum",
+  "DAI_Arbitrum",
+  "PYUSD_Arbitrum",
+  "GHO_Arbitrum",
+  "FDUSD_Arbitrum",
+  "SUSDS_Arbitrum",
+  "SUSDe_Arbitrum",
+  "USDY_Arbitrum",
+  "WETH_Arbitrum",
+  "LINK_Arbitrum",
+  "UNI_Arbitrum",
+  "WstETH_Arbitrum",
+  "WeETH_Arbitrum",
+  "RETH_Arbitrum",
+  "WBTC_Arbitrum",
+  "CbBTC_Arbitrum",
+  "TBTC_Arbitrum",
+  "MORPHO_Arbitrum",
+  "CRV_Arbitrum",
+  "ZRO_Arbitrum",
+  "ARB_Arbitrum",
+  "PEPE_Arbitrum",
+  "BONK_Arbitrum",
+  // Scroll
+  "USDT_Scroll",
+  "USDC_Scroll",
+  "USDe_Scroll",
+  "DAI_Scroll",
+  "WETH_Scroll",
+  "LINK_Scroll",
+  "WstETH_Scroll",
+  "WeETH_Scroll",
+  "WBTC_Scroll",
+];
+
+for (const name of contractNames) {
+  const contract = (generated as any)[name];
+  if (contract?.Transfer?.handler) {
+    contract.Transfer.handler(handleTransfer);
+  }
+}
