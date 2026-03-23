@@ -9,7 +9,7 @@
     "deploy": "envio deploy"
   },
   "dependencies": {
-    "envio": "^2.0.0"
+    "envio": "^2.32.10"
   },
   "devDependencies": {
     "typescript": "^5.0.0"
