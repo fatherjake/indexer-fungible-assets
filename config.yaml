@@ -31,18 +31,6 @@ contracts:
     handler: src/EventHandlers.ts
     events:
       - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: RLUSD_Ethereum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: GHO_Ethereum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: FDUSD_Ethereum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
   - name: sUSDS_Ethereum
     handler: src/EventHandlers.ts
     events:
@@ -51,35 +39,7 @@ contracts:
     handler: src/EventHandlers.ts
     events:
       - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: USDY_Ethereum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: BUIDL_Ethereum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: OUSG_Ethereum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
   - name: WETH_Ethereum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: LINK_Ethereum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: MNT_Ethereum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: UNI_Ethereum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: AAVE_Ethereum
     handler: src/EventHandlers.ts
     events:
       - event: "Transfer(address indexed from, address indexed to, uint256 value)"
@@ -87,19 +47,19 @@ contracts:
     handler: src/EventHandlers.ts
     events:
       - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: wBETH_Ethereum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
   - name: weETH_Ethereum
     handler: src/EventHandlers.ts
     events:
       - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: cbETH_Ethereum
+  - name: liquidUSD_Ethereum
     handler: src/EventHandlers.ts
     events:
       - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: rETH_Ethereum
+  - name: liquidETH_Ethereum
+    handler: src/EventHandlers.ts
+    events:
+      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
+  - name: ETHFI_Ethereum
     handler: src/EventHandlers.ts
     events:
       - event: "Transfer(address indexed from, address indexed to, uint256 value)"
@@ -111,14 +71,6 @@ contracts:
     handler: src/EventHandlers.ts
     events:
       - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: tBTC_Ethereum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: LBTC_Ethereum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
   - name: PAXG_Ethereum
     handler: src/EventHandlers.ts
     events:
@@ -127,59 +79,7 @@ contracts:
     handler: src/EventHandlers.ts
     events:
       - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: ARB_Ethereum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: POL_Ethereum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: CRO_Ethereum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: SKY_Ethereum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: MORPHO_Ethereum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: ENA_Ethereum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: ONDO_Ethereum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: CRV_Ethereum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: ZRO_Ethereum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: NEXO_Ethereum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: WLD_Ethereum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: SHIB_Ethereum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
   - name: PEPE_Ethereum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: BONK_Ethereum
     handler: src/EventHandlers.ts
     events:
       - event: "Transfer(address indexed from, address indexed to, uint256 value)"
@@ -223,23 +123,11 @@ contracts:
     handler: src/EventHandlers.ts
     events:
       - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: cbETH_Base
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: rETH_Base
+  - name: ETHFI_Base
     handler: src/EventHandlers.ts
     events:
       - event: "Transfer(address indexed from, address indexed to, uint256 value)"
   - name: cbBTC_Base
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: LBTC_Base
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: MORPHO_Base
     handler: src/EventHandlers.ts
     events:
       - event: "Transfer(address indexed from, address indexed to, uint256 value)"
@@ -267,14 +155,6 @@ contracts:
     handler: src/EventHandlers.ts
     events:
       - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: GHO_Arbitrum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: FDUSD_Arbitrum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
   - name: sUSDS_Arbitrum
     handler: src/EventHandlers.ts
     events:
@@ -283,19 +163,7 @@ contracts:
     handler: src/EventHandlers.ts
     events:
       - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: USDY_Arbitrum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
   - name: WETH_Arbitrum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: LINK_Arbitrum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: UNI_Arbitrum
     handler: src/EventHandlers.ts
     events:
       - event: "Transfer(address indexed from, address indexed to, uint256 value)"
@@ -307,7 +175,7 @@ contracts:
     handler: src/EventHandlers.ts
     events:
       - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: rETH_Arbitrum
+  - name: ETHFI_Arbitrum
     handler: src/EventHandlers.ts
     events:
       - event: "Transfer(address indexed from, address indexed to, uint256 value)"
@@ -319,31 +187,7 @@ contracts:
     handler: src/EventHandlers.ts
     events:
       - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: tBTC_Arbitrum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: ARB_Arbitrum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: MORPHO_Arbitrum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: CRV_Arbitrum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: ZRO_Arbitrum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
   - name: PEPE_Arbitrum
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: BONK_Arbitrum
     handler: src/EventHandlers.ts
     events:
       - event: "Transfer(address indexed from, address indexed to, uint256 value)"
@@ -367,15 +211,19 @@ contracts:
     handler: src/EventHandlers.ts
     events:
       - event: "Transfer(address indexed from, address indexed to, uint256 value)"
-  - name: LINK_Scroll
-    handler: src/EventHandlers.ts
-    events:
-      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
   - name: wstETH_Scroll
     handler: src/EventHandlers.ts
     events:
       - event: "Transfer(address indexed from, address indexed to, uint256 value)"
   - name: weETH_Scroll
+    handler: src/EventHandlers.ts
+    events:
+      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
+  - name: liquidUSD_Scroll
+    handler: src/EventHandlers.ts
+    events:
+      - event: "Transfer(address indexed from, address indexed to, uint256 value)"
+  - name: liquidETH_Scroll
     handler: src/EventHandlers.ts
     events:
       - event: "Transfer(address indexed from, address indexed to, uint256 value)"
@@ -385,7 +233,7 @@ contracts:
       - event: "Transfer(address indexed from, address indexed to, uint256 value)"
 networks:
   - id: 1
-    start_block: 24659164
+    start_block: 24670719
     contracts:
       - name: USDT_Ethereum
         address: "0xdAC17F958D2ee523a2206206994597C13D831ec7"
@@ -401,84 +249,34 @@ networks:
         address: "0x6c3ea9036406852006290770BEdFcAbA0e23A0e8"
       - name: USD1_Ethereum
         address: "0x8d0D000Ee44948FC98C9B98A4FA4921476f08b0D"
-      - name: RLUSD_Ethereum
-        address: "0x8292Bb45bf1Ee4d140127049757C2E0fF06317eD"
-      - name: GHO_Ethereum
-        address: "0x40D16FC0246aD3160Ccc09B8D0D3A2cD28aE6C2f"
-      - name: FDUSD_Ethereum
-        address: "0xc5f0f7b66764F6ec8C8Dff7BA683102295E16409"
       - name: sUSDS_Ethereum
         address: "0xa3931d71877C0E7a3148CB7Eb4463524FEc27fbD"
       - name: sUSDe_Ethereum
         address: "0x9D39A5DE30e57443BfF2A8307A4256c8797A3497"
-      - name: USDY_Ethereum
-        address: "0x96F6eF951840721AdBF46Ac996b59E0235CB985C"
-      - name: BUIDL_Ethereum
-        address: "0x7712c34205737192402172409a8F7ccef8aA2AEc"
-      - name: OUSG_Ethereum
-        address: "0x1B19C19393e2d034D8Ff31ff34c81252FcBbee92"
       - name: WETH_Ethereum
         address: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
-      - name: LINK_Ethereum
-        address: "0x514910771AF9Ca656af840dff83E8264EcF986CA"
-      - name: MNT_Ethereum
-        address: "0x3c3a81e81dc49A522A592e7622A7E711c06bf354"
-      - name: UNI_Ethereum
-        address: "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984"
-      - name: AAVE_Ethereum
-        address: "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9"
       - name: wstETH_Ethereum
         address: "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0"
-      - name: wBETH_Ethereum
-        address: "0xa2E3356610840701BDf5611a53974510Ae27E2e1"
       - name: weETH_Ethereum
         address: "0xCd5fE23C85820F7B72D0926FC9b05b43E359b7ee"
-      - name: cbETH_Ethereum
-        address: "0xBe9895146f7AF43049ca1c1AE358B0541Ea49704"
-      - name: rETH_Ethereum
-        address: "0xae78736Cd615f374D3085123A210448E74Fc6393"
+      - name: liquidUSD_Ethereum
+        address: "0x08c6F91e2B681FaF5e17227F2a44C307b3C1364C"
+      - name: liquidETH_Ethereum
+        address: "0xf0bb20865277aBd641a307eCe5Ee04E79073416C"
+      - name: ETHFI_Ethereum
+        address: "0xFe0c30065B384F05761f15d0CC899D4F9F9Cc0eB"
       - name: WBTC_Ethereum
         address: "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
       - name: cbBTC_Ethereum
         address: "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf"
-      - name: tBTC_Ethereum
-        address: "0x18084fbA666a33d37592fA2633fD49a74DD93a88"
-      - name: LBTC_Ethereum
-        address: "0x8236a87084f8B84306f72007F36F2618A5634494"
       - name: PAXG_Ethereum
         address: "0x45804880De22913dAFE09f4980848ECE6EcbAf78"
       - name: XAUt_Ethereum
         address: "0x68749665FF8D2d112Fa859AA293F07a622782F38"
-      - name: ARB_Ethereum
-        address: "0xB50721BCf8d664c30412Cfbc6cf7a15145234ad1"
-      - name: POL_Ethereum
-        address: "0x455e53CBB86018Ac2B8092FdCd39d8444aFFC3F6"
-      - name: CRO_Ethereum
-        address: "0xa0b73e1Ff0B80914AB6fe0444E65848C4C34450b"
-      - name: SKY_Ethereum
-        address: "0x56072C95FAA701256059aa122697B133aDEd9279"
-      - name: MORPHO_Ethereum
-        address: "0x58D97B57BB95320F9a05dC918Aef65434969c2B2"
-      - name: ENA_Ethereum
-        address: "0x57e114B691Db790C35207b2e685D4A43181e6061"
-      - name: ONDO_Ethereum
-        address: "0xfAbA6f8e4a5E8Ab82F62fe7C39859FA577269BE3"
-      - name: CRV_Ethereum
-        address: "0xD533a949740bb3306d119CC777fa900bA034cd52"
-      - name: ZRO_Ethereum
-        address: "0x6985884C4392D348587B19cb9eAAf157F13271cd"
-      - name: NEXO_Ethereum
-        address: "0xB62132e35a6c13ee1EE0f84dC5d40bad8d815206"
-      - name: WLD_Ethereum
-        address: "0x163f8C2467924be0ae7B5347228CABF260318753"
-      - name: SHIB_Ethereum
-        address: "0x95aD61b0a150d79219dCF64E1E6Cc01f0B64C4cE"
       - name: PEPE_Ethereum
         address: "0x6982508145454Ce325dDbE47a25d4ec3d2311933"
-      - name: BONK_Ethereum
-        address: "0x1151CB3d861920e07a38e03eEAd12C32178567F6"
   - id: 8453
-    start_block: 43371727
+    start_block: 43442249
     contracts:
       - name: USDT_Base
         address: "0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2"
@@ -500,18 +298,12 @@ networks:
         address: "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452"
       - name: weETH_Base
         address: "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A"
-      - name: cbETH_Base
-        address: "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22"
-      - name: rETH_Base
-        address: "0xB6fe221Fe9EeF5aBa221c348bA20A1Bf5e73624c"
+      - name: ETHFI_Base
+        address: "0x6C240DDA6b5c336DF09A4D011139beAAa1eA2Aa2"
       - name: cbBTC_Base
         address: "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf"
-      - name: LBTC_Base
-        address: "0xecAc9C5F704e954931349Da37F60E39f515c11c1"
-      - name: MORPHO_Base
-        address: "0xBAa5CC21fd487B8Fcc2F632f3F4E8D37262a0842"
   - id: 42161
-    start_block: 441867908
+    start_block: 442423696
     contracts:
       - name: USDT_Arbitrum
         address: "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9"
@@ -525,48 +317,26 @@ networks:
         address: "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1"
       - name: PYUSD_Arbitrum
         address: "0x46850ad61c2b7d64d08c9c754f45254596696984"
-      - name: GHO_Arbitrum
-        address: "0x7dfF72693f6A4149b17e7C6314655f6A9F7c8B33"
-      - name: FDUSD_Arbitrum
-        address: "0x93c9932e4afa59201f0b5e63f7d816516f1669fe"
       - name: sUSDS_Arbitrum
         address: "0xddb46999f8891663a8f2828d25298f70416d7610"
       - name: sUSDe_Arbitrum
         address: "0x211Cc4DD073734dA055fbF44a2b4667d5E5fE5d2"
-      - name: USDY_Arbitrum
-        address: "0x35e050d3C0eC2d29D269a8EcEa763a183bDF9A9D"
       - name: WETH_Arbitrum
         address: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1"
-      - name: LINK_Arbitrum
-        address: "0xf97f4df75117a78c1A5a0DBb814Af92458539FB4"
-      - name: UNI_Arbitrum
-        address: "0xFa7F8980b0f1E64A2062791cc3b0871572f1F7f0"
       - name: wstETH_Arbitrum
         address: "0x5979D7b546E38E414F7E9822514be443A4800529"
       - name: weETH_Arbitrum
         address: "0x35751007a407ca6FEFfE80b3cB397736D2cf4dbe"
-      - name: rETH_Arbitrum
-        address: "0xEC70Dcb4A1EFa46b8F2D97C310C9c4790ba5ffA8"
+      - name: ETHFI_Arbitrum
+        address: "0x7189fb5B6504bbfF6a852B13B7B82a3c118fDc27"
       - name: WBTC_Arbitrum
         address: "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f"
       - name: cbBTC_Arbitrum
         address: "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf"
-      - name: tBTC_Arbitrum
-        address: "0x6c84a8f1c29108F47a79964b5Fe888D4f4D0de40"
-      - name: ARB_Arbitrum
-        address: "0x912CE59144191C1204E64559FE8253a0e49E6548"
-      - name: MORPHO_Arbitrum
-        address: "0x40BD670A58238e6E230c430BBb5cE6ec0d40df48"
-      - name: CRV_Arbitrum
-        address: "0x11cDb42B0EB46D95f990BeDD4695A6e3fA034978"
-      - name: ZRO_Arbitrum
-        address: "0x6985884C4392D348587B19cb9eAAf157F13271cd"
       - name: PEPE_Arbitrum
         address: "0x25d887Ce7a35172C62FeBFD67a1856F20FaEbB00"
-      - name: BONK_Arbitrum
-        address: "0x09199d9A5F4448D0848e4395D065e1ad9c4a1F74"
   - id: 534352
-    start_block: 31920384
+    start_block: 32009788
     contracts:
       - name: USDT_Scroll
         address: "0xf55BEC9cafDbE8730f096Aa55dad6D22d44099Df"
@@ -578,11 +348,13 @@ networks:
         address: "0xcA77eB3fEFe3725Dc33bccB54eDEFc3D9f764f97"
       - name: WETH_Scroll
         address: "0x5300000000000000000000000000000000000004"
-      - name: LINK_Scroll
-        address: "0x548C6944cba02B9D1C0570102c89de64D258d3Ac"
       - name: wstETH_Scroll
         address: "0xf610A9dfB7C89644979b4A0f27063E9e7d7CDA32"
       - name: weETH_Scroll
         address: "0x01f0a31698C4d065659b9bdC21B3610292a1c506"
+      - name: liquidUSD_Scroll
+        address: "0x08c6F91e2B681FaF5e17227F2a44C307b3C1364C"
+      - name: liquidETH_Scroll
+        address: "0xf0bb20865277aBd641a307eCe5Ee04E79073416C"
       - name: WBTC_Scroll
         address: "0x3C1BCa5a656e69edCD0D4E36BEbb3FcDAcA60Cf1"
